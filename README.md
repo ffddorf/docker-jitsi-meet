@@ -1,6 +1,6 @@
-# Jitsi Meet on Docker
+# Jitsi Meet on ~Docker~ Kubernetes
 
-![](resources/jitsi-docker.png)
+The goal of this fork is to get Jitsi to deploy to Kubernetes with a single `kubectl apply -f .`
 
 [Jitsi](https://jitsi.org/) is a set of Open Source projects that allows you to easily build and deploy secure videoconferencing solutions.
 
@@ -15,6 +15,8 @@ The installation manual is available [here](https://jitsi.github.io/handbook/doc
 ### Kubernetes
 
 If you plan to install the jitsi-meet stack on a Kubernetes cluster you can find tools and tutorials in the project [Jitsi on Kubernetes](https://github.com/jitsi-contrib/jitsi-kubernetes).
+
+The deployment files can be found in [examples/kubernetes](https://github.com/ffddorf/docker-jitsi-meet/tree/master/examples/kubernetes)
 
 ## TODO
 
