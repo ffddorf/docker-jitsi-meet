@@ -1,6 +1,6 @@
 # Jitsi Meet on ~Docker~ Kubernetes
 
-The goal of this fork is to get Jitsi to deploy to Kubernetes with a single `kubectl apply -f .`
+The goal of this fork is to get Jitsi Meet to deploy to Kubernetes with a single `kubectl apply -f .`
 
 [Jitsi](https://jitsi.org/) is a set of Open Source projects that allows you to easily build and deploy secure videoconferencing solutions.
 
