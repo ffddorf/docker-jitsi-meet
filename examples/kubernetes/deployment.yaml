@@ -90,6 +90,12 @@ spec:
               value: America/Los_Angeles
             - name: JVB_TCP_HARVESTER_DISABLED
               value: "true"
+            - name: ENABLE_GUESTS
+              value: "1"
+            - name: PUBLIC_URL
+              value: https://kube.latchan.lv/
+            - name: XMPP_CROSS_DOMAIN
+              value: "true"
         - name: web
           image: jitsi/web
           imagePullPolicy: Always
@@ -112,14 +118,16 @@ spec:
               value: America/Los_Angeles
             - name: JVB_TCP_HARVESTER_DISABLED
               value: "true"
+            - name: ENABLE_GUESTS
+              value: "1"
+            - name: PUBLIC_URL
+              value: https://kube.latchan.lv/
         - name: jvb
           image: jitsi/jvb
           imagePullPolicy: Always
           env:
             - name: XMPP_SERVER
               value: localhost
-            - name: DOCKER_HOST_ADDRESS
-              value: <Set the address for any node in the cluster here>
             - name: XMPP_DOMAIN
               value: meet.jitsi
             - name: XMPP_AUTH_DOMAIN
@@ -150,4 +158,6 @@ spec:
               value: jvbbrewery
             - name: TZ
               value: America/Los_Angeles
+            - name: PUBLIC_URL
+              value: https://kube.latchan.lv/
       serviceAccountName: jitsi
